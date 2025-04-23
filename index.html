@@ -16,9 +16,11 @@
         rel="stylesheet">
 
 
-    <!--link a booststrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS Bundle (para que funcione el menú hamburguesa) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  
     <!--link css-->
     <link rel="stylesheet" href="./style/style.css">
     
@@ -33,7 +35,29 @@
 
         <img width="60" src="./img/logo-celular-persona.png" alt="logo celulares">
 
-
+        <nav class="navbar navbar-expand-md  bg-success navbar-dark">
+            <div class="container-fluid">
+              <!-- Logo o nombre -->
+              <a class="navbar-brand" href="#"></a>
+          
+              <!-- Botón hamburguesa -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+                aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <!-- Enlaces del menú -->
+              <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./paginas/servicios.html">Servicios</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./paginas/Mas-información.html">Más información</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./paginas/Contacto.html">Contacto</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./paginas/Sobre-nosotros.html">Sobre nosotros</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
         
 
@@ -45,17 +69,7 @@
 
     </header>
 
-     <!--nav-->
-
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li> <a href="./paginas/servicios.html">Servicios</a> </li>
-            <li> <a href="./paginas/Mas-información.html">Mas información</a></li>
-            <li> <a href="./paginas/Contacto.html">Contacto</a> </li>
-            <li> <a href="./paginas/Sobre-nosotros.html">Sobre nosotros</a> </li>
-        </ul>
-    </nav>
+     
 
     <!--main: contenido principal -->
     <main>
@@ -143,9 +157,8 @@
     </footer>
 
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 
-<!--link al JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 
 </html>

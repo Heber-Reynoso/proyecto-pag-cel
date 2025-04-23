@@ -34,16 +34,10 @@ a {
 
 body {
     font-family: "Nunito", sans-serif;
-    display: grid;
-    grid-template-areas: 
-    "nav header header header"
-    "nav banner banner banner"
-    "nav main   main   main"
-    "footer footer footer footer"
-    ;
-    grid-template-columns: 100px 1fr 1fr auto ;
-    grid-template-rows: 10px auto auto auto;
-    
+
+
+
+
 }
 
 
@@ -56,7 +50,7 @@ ul {
 
 /* HEADER */
 header {
-    background-color: var(--main-tex-color);
+    background-color: var(--main-tex-color) !important;
     color: var(--main-text-light);
     display: flex;
     align-items: center;
@@ -72,7 +66,6 @@ header {
 }
 
 header a {
-
     text-decoration: none;
     color: var(--main-text-light);
     font-weight: 600;
@@ -80,25 +73,32 @@ header a {
 
 /*nav*/
 
-nav {
-grid-area: nav;
+.bg-success {
+    background-color: var(--main-tex-color) !important;
+  }
+
+
+  .navbar-collapse {
+    padding-top: px; /* Ajustá este valor hasta que se vea bien */
+  }
+
+header nav ul {
+    display: flex;
 }
 
-header nav ul
-{display: flex;
-}
-
-header nav ul li {
-    margin: 0 10px;
+header nav ul li a {
+    display: flex;
+    justify-content: center margin: 0 15px;
+    padding: 15px;
 }
 
 
 /*main*/
 
 main {
-    margin-top: 0px;
+    margin-top: 60px;
     grid-area: main;
-     }
+}
 
 .titulos {
     color: var(--main-color-secundary);
@@ -115,7 +115,7 @@ section p {
 
 
 .main {
-    min-height:90vh;
+    min-height: 90vh;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -124,6 +124,7 @@ section p {
 .main p {
     margin: 20px 0;
 }
+
 .main h3 {
     margin: 20px 0;
 }
@@ -138,7 +139,8 @@ section p {
 /*footer*/
 footer {
     background-color: var(--main-tex-color);
-    color: var(--main-text-light);grid-area: footer;
+    color: var(--main-text-light);
+    grid-area: footer;
 }
 
 footer a {
@@ -161,10 +163,12 @@ footer a {
     padding: 0% 10px;
 }
 
-.boton-registrate {background-color: var(--main-color-secundary);
-color: var(--main-text-light);
-border-radius: 8px;
-padding: 5px 10px }
+.boton-registrate {
+    background-color: var(--main-color-secundary);
+    color: var(--main-text-light);
+    border-radius: 8px;
+    padding: 5px 10px
+}
 
 
 
@@ -179,17 +183,21 @@ padding: 5px 10px }
     color: var(--main-color);
     text-align: center;
     display: block;
-    margin-top: 40px;
+    margin-top: 50px;
     padding: 10px;
     grid-area: banner;
-    }
+}
 
-   
-    #banner p {
-        margin: 20px 0;
-    }
 
-   
+#banner p {
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+      padding-top: 120px; 
+    }
+  }
 
 
 /* 
